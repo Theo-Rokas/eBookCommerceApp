@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@color/Gallery"
+    tools:context=".activities.CreateOrEditActivity">
+
+    <EditText
+        android:id="@+id/etBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:drawablePadding="8dp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/etBookAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Author"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/etBookPages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number of pages"
+        android:inputType="number"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/etBookPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/etBookDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:minHeight="100dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genre"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:layout_marginTop="20dp" />
+
+    <Spinner
+        android:id="@+id/spGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivBookImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Image"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnChooseImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Image"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnSubmitBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Book"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+</LinearLayout>
